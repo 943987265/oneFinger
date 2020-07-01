@@ -1,0 +1,71 @@
+.comment {
+    header {
+        height: 50px;
+        background: #f44;
+        padding: 0 10px;
+        font-size: 20px;
+        color: #fff;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        text-align: center;
+        line-height: 50px;
+        position: relative;
+
+        i {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+        }
+    }
+
+    section {
+        padding: 10px;
+        background: #fff;
+        border-bottom: 1px solid #ddd;
+        /*no*/
+
+        textarea {
+            width: 100%;
+            border: none;
+            outline: none;
+            resize: none;
+            font-size: 16px;
+            font-weight: 200;
+            line-height: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        div {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 30px;
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            input {
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        button {
+            width: 100%;
+            height: 54px;
+            background: #ccc;
+            color: #fff;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+    }
+}

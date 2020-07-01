@@ -1,0 +1,142 @@
+.mine {
+    section {
+        background: #fff;
+
+        .user-img {
+            height: 220px;
+            background: url('https://www.17sucai.com/preview/177065/2016-09-12/Sc-5/images/user_bg.png') no-repeat 0 0 / 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            div {
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                border: 2px solid #fff;
+                /*no*/
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 80px;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .user-order {
+            .order-header {
+                padding: 7px 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    font-size: 16px;
+
+                    img {
+                        width: 30px;
+                        margin-right: 10px;
+                    }
+                }
+
+                p {
+                    font-size: 13px;
+                    color: #999;
+                    display: flex;
+                    align-items: center;
+
+                    &::after {
+                        content: '';
+                        display: inline-block;
+                        width: 7px;
+                        height: 7px;
+                        border-top: 1px solid #999;
+                        /*no*/
+                        border-right: 1px solid #999;
+                        /*no*/
+                        transform: rotate(45deg) translateY(2px);
+                        margin-left: 7px;
+                    }
+                }
+            }
+
+            ul {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 10px 0;
+                border-top: 1px solid #ddd;
+                /*no*/
+                border-bottom: 1px solid #ddd;
+                /*no*/
+
+                li {
+                    width: 45px;
+                    display: flex;
+                    flex-flow: column;
+                    align-items: center;
+                    font-size: 15px;
+                    font-weight: 200;
+                    color: #666;
+
+                    span {
+                        margin: 5px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    nav {
+        background: #fff;
+        margin-top: 10px;
+        border-top: 1px solid #ddd;
+        /*no*/
+
+        .mine-nav {
+            padding: 7px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            /*no*/
+
+            div {
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                color: #666;
+
+                img {
+                    width: 30px;
+                    margin-right: 10px;
+                }
+            }
+
+            p {
+                font-size: 13px;
+                color: #999;
+                display: flex;
+                align-items: center;
+
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    width: 7px;
+                    height: 7px;
+                    border-top: 1px solid #999;
+                    /*no*/
+                    border-right: 1px solid #999;
+                    /*no*/
+                    transform: rotate(45deg) translateY(2px);
+                    margin-left: 7px;
+                }
+            }
+        }
+    }
+}

@@ -1,29 +1,39 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
+import Home from './component/home/Home'
+import Community from './component/community/Community'
+import Cart from './component/cart/Cart'
+import Mine from './component/mine/Mine'
+import TabBar from './component/tabBar/TabBar'
+import Category from './component/category/Category'
+import Merchant from './component/merchant/Merchant'
+import Comment from './component/comment/Comment'
+import axios from 'axios'
 
-class App extends Component {
+import './App.css'
+
+axios.defaults.baseURL = 'http://s.linweiqin.com/api/s';
+axios.interceptors.response.use(response => {
+  return response.data;
+}, error => {
+  return Promise.reject(error);
+});
+
+export default class App extends Component {
   render() {
     return (
-      <div>
-        <h1>{this.props.num}</h1>
-        <button onClick={this.props.reduceNum}>-</button>
-        <button onClick={this.props.plusNum}>+</button>
-      </div>
+      <Router>
+        <Switch>
+          <Route path="/" exact render={() => <TabBar><Home></Home></TabBar>} />
+          <Route path="/community" exact render={() => <TabBar><Community></Community></TabBar>} />
+          <Route path="/cart" exact render={() => <TabBar><Cart></Cart></TabBar>} />
+          <Route path="/my" exact render={() => <TabBar><Mine></Mine></TabBar>} />
+          <Route path="/category" exact render={() => <Category></Category>} />
+          <Route path="/merchant" exact render={() => <TabBar><Merchant></Merchant></TabBar>} />
+          <Route path="/comment" exact render={() => <TabBar><Comment></Comment></TabBar>} />
+          <Redirect to="/"></Redirect>
+        </Switch>
+      </Router>
     )
   }
 }
-
-const getState = state => ({ num: state.num })
-
-const dispatchState = dispatch => ({
-  reduceNum: () => dispatch({
-    type: 'reduce',
-    value: 1
-  }),
-  plusNum: () => dispatch({
-    type: 'plus',
-    value: 1
-  })
-})
-
-export default connect(getState, dispatchState)(App)

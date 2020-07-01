@@ -1,5 +1,5 @@
-import calculator from './calculator/index'
+import reducer from './reducer/index'
 import { createStore, applyMiddleware } from "redux";
 import reduxThunk from "redux-thunk";
 
-export default createStore(calculator, applyMiddleware(reduxThunk));
+export default createStore(reducer, applyMiddleware(reduxThunk));
