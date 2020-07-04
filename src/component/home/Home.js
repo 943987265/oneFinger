@@ -48,14 +48,14 @@ class Home extends Component {
                 <div className="swiper-container">
                     <div className="swiper-wrapper">
                         {this.state.swiperList.map((ele, idx) => <div key={idx} className="swiper-slide">
-                            <img src={ele.loopimg_url} />
+                            <img src={ele.loopimg_url} alt=''/>
                         </div>)}
                     </div>
                     <div className="swiper-pagination"></div>
                 </div>
                 <nav>
                     {this.props.navList.map((ele, idx) => (<a href={ele.url} key={idx}>
-                        <img src={ele.imgUrl} />
+                        <img src={ele.imgUrl} alt=''/>
                         <span>{ele.title}</span>
                     </a>))}
                 </nav>
@@ -63,7 +63,7 @@ class Home extends Component {
                     <h1>推荐商家</h1>
                     <ul>
                         {this.props.merchantList.map((ele, idx) => (<li onClick={this.props.history.push.bind(this, ele.url)} key={idx}>
-                            <img src={ele.imgUrl} />
+                            <img src={ele.imgUrl} alt=''/>
                             <span>{ele.title}</span>
                         </li>))}
                     </ul>
@@ -72,7 +72,7 @@ class Home extends Component {
                     <h1><span>好货平卖</span></h1>
                     <ul>
                         {this.state.selectedList.map((ele, idx) => (<li onClick={this.props.history.push.bind(this, ele.url)} key={idx}>
-                            <img src={ele.product_url} />
+                            <img src={ele.product_url} alt=''/>
                             <p>{ele.product_name}</p>
                             <div>
                                 <strong>￥{ele.product_price}</strong>

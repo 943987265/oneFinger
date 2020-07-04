@@ -1,0 +1,48 @@
+.category {
+    header {
+        height: 50px;
+        background: #f44;
+        padding: 0 10px;
+        font-size: 20px;
+        color: #fff;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        text-align: center;
+        line-height: 50px;
+        position: relative;
+
+        i {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+        }
+    }
+
+    section {
+        display: flex;
+        .category-nav {
+            width: 120px;
+            li {
+                height: 60px;
+                line-height: 60px;
+                font-size: 16px;
+                padding-left: 14px;
+                
+                &.category-active {
+                    border-left: 4px solid #f44; /*no*/
+                    background: #fff;
+                    padding-left: 10px;
+                }
+            }
+        }
+
+        .category-content {
+            flex: 1;
+            min-height: 100vh;
+            background: #fff;
+            padding: 20px;
+        }
+    }
+}

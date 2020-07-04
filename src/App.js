@@ -8,6 +8,8 @@ import TabBar from './component/tabBar/TabBar'
 import Category from './component/category/Category'
 import Merchant from './component/merchant/Merchant'
 import Comment from './component/comment/Comment'
+import Login from './component/login/Login'
+import Sign from './component/sign/Sign'
 import axios from 'axios'
 
 import './App.css'
@@ -29,8 +31,10 @@ export default class App extends Component {
           <Route path="/cart" exact render={() => <TabBar><Cart></Cart></TabBar>} />
           <Route path="/my" exact render={() => <TabBar><Mine></Mine></TabBar>} />
           <Route path="/category" exact render={() => <Category></Category>} />
-          <Route path="/merchant" exact render={() => <TabBar><Merchant></Merchant></TabBar>} />
-          <Route path="/comment" exact render={() => <TabBar><Comment></Comment></TabBar>} />
+          <Route path="/merchant" exact render={() => <Merchant></Merchant>} />
+          <Route path="/comment" exact render={() => <Comment></Comment>} />
+          <Route path="/login" exact render={() => <Login></Login>} />
+          <Route path="/sign" exact render={() => <Sign></Sign>} />
           <Redirect to="/"></Redirect>
         </Switch>
       </Router>

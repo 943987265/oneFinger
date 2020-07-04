@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import { withRouter, HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
+import './Category.scss'
 
 class Category extends Component {
     state = {
@@ -12,9 +13,12 @@ class Category extends Component {
             this.setState({
                 categoryList: res.wdata
             }, () => {
-                console.log(this.state.categoryList[this.state.activeIdx].sub_category);
+                console.log(this.state.categoryList[this.state.activeIdx]);
             })
         })
+    }
+    shiftNav = idx => {
+        this.setState({ activeIdx: idx });
     }
     render() {
         return (
@@ -25,7 +29,7 @@ class Category extends Component {
                 </header>
                 <section>
                     <ul className="category-nav">
-                        {this.state.categoryList.map((ele, idx) => (<li key={idx} onClick={this.setState.bind(this, { activeIdx: idx })}>
+                        {this.state.categoryList.map((ele, idx) => (<li key={idx} onClick={this.shiftNav.bind(this, idx)} className={this.state.activeIdx === idx ? 'category-active' : ''}>
                             {ele.category_name}
                         </li>))}
                     </ul>
@@ -33,6 +37,9 @@ class Category extends Component {
                         {this.state.categoryList[this.state.activeIdx].sub_category.map((ele, idx) => (<li key={idx}>
                         </li>))}
                     </ul> */}
+                    <div className="category-content">
+                        {this.state.activeIdx + 1}
+                    </div>
                 </section>
             </div>
         )

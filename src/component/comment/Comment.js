@@ -13,7 +13,7 @@ class Comment extends Component {
                 <section>
                     <textarea maxLength="50" placeholder="哩一刻，你系度谂乜啊？(50字内)" rows="4"></textarea>
                     <div>
-                        <img src="https://www.17sucai.com/preview/177065/2016-09-12/Sc-5/images/f_addimg.png" />
+                        <img src="https://www.17sucai.com/preview/177065/2016-09-12/Sc-5/images/f_addimg.png" alt=''/>
                         <input type="file" accept="image/*" />
                     </div>
                     <button>提交</button>

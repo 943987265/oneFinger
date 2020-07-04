@@ -34,4 +34,107 @@
         }
     }
 
-  }
+    ul {
+        margin-bottom: 66px;
+
+        li {
+            background: #fff;
+            border-top: 1px solid #ddd;
+            /*no*/
+            border-bottom: 1px solid #ddd;
+            /*no*/
+            margin-bottom: 10px;
+
+            .goods-header {
+                font-size: 18px;
+                font-weight: 200;
+                color: #333;
+                display: flex;
+                align-items: center;
+                padding: 7px 10px;
+                border-bottom: 1px solid #ddd;
+                /*no*/
+
+                img {
+                    width: 30px;
+                    margin: 0 10px;
+                }
+            }
+
+            .goods-content {
+                padding: 10px;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 96px;
+                }
+
+                .product-text {
+                    flex: 1;
+                    padding: 10px;
+
+                    h1 {
+                        font-size: 20px;
+                    }
+
+                    .goods-options {
+                        font-size: 14px;
+                        color: #999;
+                        margin: 6px 0;
+                    }
+
+                    .goods-price {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-size: 20px;
+
+                        strong {
+                            color: #f44;
+                        }
+
+                        div {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            font-size: 22px;
+
+                            span {
+                                width: 40px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 100vw;
+        height: 60px;
+        position: fixed;
+        bottom: 66px;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 30px;
+        padding: 0 20px;
+        border: 1px solid #ddd; /*no*/
+        font-size: 20px;
+        color: #f44;
+
+        button {
+            width: 88px;
+            height: 40px;
+            background: #f44;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+    }
+}

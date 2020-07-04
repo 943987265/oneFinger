@@ -14,14 +14,14 @@ class Community extends Component {
                 <ul>
                     <li>
                         <div className="community-user">
-                            <img src="images/user-img0.jpg" />
+                            <img src="images/user-img0.jpg" alt=''/>
                             <span>帅到不行</span>
                         </div>
                         <p>[潮流服饰]:秋季大换装，就在我的小店，欢迎参观哈....</p>
                         <div className="community-img">
-                            <img src="https://www.17sucai.com/preview/177065/2016-09-12/Sc-5/images/s_sq_01.png" />
-                            <img src="https://www.17sucai.com/preview/177065/2016-09-12/Sc-5/images/s_sq_02.png" />
-                            <img src="https://www.17sucai.com/preview/177065/2016-09-12/Sc-5/images/s_sq_03.png" />
+                            <img src="https://www.17sucai.com/preview/177065/2016-09-12/Sc-5/images/s_sq_01.png" alt=''/>
+                            <img src="https://www.17sucai.com/preview/177065/2016-09-12/Sc-5/images/s_sq_02.png" alt=''/>
+                            <img src="https://www.17sucai.com/preview/177065/2016-09-12/Sc-5/images/s_sq_03.png" alt=''/>
                         </div>
                         <div className="community-footer">
                             <span>刚刚</span>
@@ -30,14 +30,14 @@ class Community extends Component {
                     </li>
                     <li>
                         <div className="community-user">
-                            <img src="https://www.17sucai.com/preview/177065/2016-09-12/Sc-5/images/user-img0.jpg" />
+                            <img src="https://www.17sucai.com/preview/177065/2016-09-12/Sc-5/images/user-img0.jpg" alt=''/>
                             <span>帅到不行</span>
                         </div>
                         <p>[潮流服饰]:秋季大换装，就在我的小店，欢迎参观哈....</p>
                         <div className="community-img">
-                            <img src="https://www.17sucai.com/preview/177065/2016-09-12/Sc-5/images/s_sq_04.png" />
-                            <img src="https://www.17sucai.com/preview/177065/2016-09-12/Sc-5/images/s_sq_05.png" />
-                            <img src="https://www.17sucai.com/preview/177065/2016-09-12/Sc-5/images/s_sq_06.png" />
+                            <img src="https://www.17sucai.com/preview/177065/2016-09-12/Sc-5/images/s_sq_04.png" alt=''/>
+                            <img src="https://www.17sucai.com/preview/177065/2016-09-12/Sc-5/images/s_sq_05.png" alt=''/>
+                            <img src="https://www.17sucai.com/preview/177065/2016-09-12/Sc-5/images/s_sq_06.png" alt=''/>
                         </div>
                         <div className="community-footer">
                             <span>刚刚</span>

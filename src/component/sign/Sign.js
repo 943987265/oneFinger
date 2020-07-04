@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 // import axios from 'axios'
-import './Mine.scss'
+import './Sign.scss'
 
-class Mine extends Component {
+class Sign extends Component {
     state = {
         userInfo: JSON.parse(localStorage.getItem('oneFinger-userInfo')) || {}
     }
@@ -26,8 +26,8 @@ class Mine extends Component {
                                 <img src="images/user-img0.jpg" alt='' />
                             </div>) : 
                             (<div className="user-unlogin">
-                                <button onClick={this.props.history.push.bind(this, '/login')}>登录</button>
-                                <button onClick={this.props.history.push.bind(this, '/sign')}>注册</button>
+                                <button>登录</button>
+                                <button>注册</button>
                             </div>)}
                     </div>
                     <div className="user-order">
@@ -97,4 +97,4 @@ class Mine extends Component {
     }
 }
 
-export default withRouter(Mine)
+export default withRouter(Sign)
